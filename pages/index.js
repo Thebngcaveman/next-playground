@@ -1,11 +1,15 @@
-import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link.js";
+import Head from "next/head.js";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <h1>Hello world</h1>
+      <Head>
+        <title>Damedane tech Tutorial</title>
+      </Head>
+      <Link href="/about">About</Link>
+      <h1 className={styles.homePageTitle}>Hello world</h1>
     </div>
   );
 }
