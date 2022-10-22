@@ -1,6 +1,7 @@
 import Link from "next/link.js";
 
-const PageNotFound = () => {
+const PageNotFound = ({ dataCoin }) => {
+  console.log(dataCoin);
   return (
     <div>
       <h1>Page Not Found</h1>

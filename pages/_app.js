@@ -1,12 +1,16 @@
 import Layout from "../components/Layout.js";
 import "../styles/globals.css";
+import Head from "next/head.js";
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <Layout>
+      <Head>
+        <title>Damedane tech Tutorial</title>
+      </Head>
       <Component {...pageProps} />
     </Layout>
   );
 }
 
-export default MyApp;
+export default App;
