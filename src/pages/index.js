@@ -1,11 +1,10 @@
 import Link from "next/link.js";
-import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Link href="/about">About</Link>
-      <h1 className={styles.homePageTitle}>Hello world</h1>
+      <h1>Hello world</h1>
     </div>
   );
 }
